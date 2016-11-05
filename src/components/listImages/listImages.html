@@ -1,0 +1,15 @@
+<div infinite-scroll="$ctrl.addItems()" infinite-scroll-distance="0">
+  <div class="item-list row">
+    <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="photo in $ctrl.photos track by $index">
+      <div class="item">
+        <p>
+          <a class="item-title" ui-sref="albumImages({id: photo.albumId})"><i class="fa fa-picture-o" aria-hidden="true"></i> Album {{photo.albumId}}</a>
+        </p>
+        <a ui-sref="singleImage({id: photo.id})" class="item-img">
+          <img ng-src="{{photo.thumbnailUrl}}" alt="Photo" class="image-properties">
+        </a>
+        <p class="list-item-description">{{photo.title}}</p>
+      </div>
+    </div>
+  </div>
+</div>

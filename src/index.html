@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <base href="/">
+  <title>Document</title>
+</head>
+
+<body ng-app='app' ng-strict-di>
+  <header-main></header-main>
+  <div class="container">  
+    <div class="row">
+      <div class="main center-block">
+        <ui-view></ui-view>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <footer-fixed class="footer"></footer-fixed>
+</body>
+
+</html>
